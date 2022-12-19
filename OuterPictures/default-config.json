@@ -1,0 +1,15 @@
+{
+  "enabled": true,
+  "settings": {
+    "Frame": {
+      "type": "selector",
+      "value": "Polaroid",
+      "options": [
+        "[none]",
+        "Polaroid",
+        "Square"
+      ]
+    },
+    "Directory Name": "/Outer Pictures"
+  }
+}
