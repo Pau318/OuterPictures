@@ -1,0 +1,5 @@
+﻿<Project>
+  <PropertyGroup>
+    <OutputPath>$(AppData)\OuterWildsModManager\OWML\Mods\Pau318.OuterPictures</OutputPath>
+  </PropertyGroup>
+</Project>
