@@ -37,13 +37,6 @@ namespace OuterPictures
         public class MyPatchClass
         {
             [HarmonyPrefix]
-            [HarmonyPatch(typeof(ProbeCamera), nameof(ProbeCamera.TakeSnapshot))]
-            public static void ProbeCamera_TakeSnapshot_prefix()
-            {
-                probeActive = true;
-            }
-
-            [HarmonyPrefix]
             [HarmonyPatch(typeof(ProbeLauncherUI), nameof(ProbeLauncherUI.HideProbeHUD))]
             public static void ProbeLauncherUI_HideProbeHUD_prefix()
             {
@@ -53,6 +46,7 @@ namespace OuterPictures
             [HarmonyPrefix]
             [HarmonyPatch(typeof(ProbeLauncherUI),nameof(ProbeLauncherUI.OnTakeSnapshot))]
             public static void ProbeLauncherUI_OnTakeSnapshot_prefix(RenderTexture snapshot, ProbeCamera camera, float secondsAnchored) {
+                probeActive = true;
                 rt = snapshot;
             }
         }
