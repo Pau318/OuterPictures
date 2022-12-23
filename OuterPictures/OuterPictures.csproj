@@ -27,4 +27,7 @@
   <ItemGroup>
     <Content Include="OuterPictures.csproj.user" />
   </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy /y &quot;$(ProjectDir)\assets&quot; &quot;$(OutDir)&quot;" />
+  </Target>
 </Project>

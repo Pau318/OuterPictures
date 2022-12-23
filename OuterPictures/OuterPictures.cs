@@ -59,9 +59,7 @@ namespace OuterPictures
 
         private void Start()
         {
-            /*var bundle = ModHelper.Assets.LoadBundle("assets/my_bundle");
-            paper = bundle.LoadAsset<Texture2D>("assets/paper.png");*/
-            paper = ModHelper.Assets.GetTexture("assets/paper.png");
+            paper = ModHelper.Assets.GetTexture("paper.png");
         }
 
         public override void Configure(IModConfig config)
